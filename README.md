@@ -25,7 +25,43 @@
 1. Клонируйте репозиторий:
 
 ```sh
-git clone 
+git clone https://github.com/radiant2958/CurrencyRateDjangoApp.git
 cd myproject
 
 ```
+
+2. Установите виртуальное окружение и активируйте его:
+
+```sh
+python -m venv venv
+source venv/bin/activate  # Для Windows: venv\Scripts\activate
+```
+
+3. Установите зависимости:
+
+```sh
+pip install -r requirements.txt
+
+```
+
+4. Настройка переменных окружения:
+Создайте файл .env в корневой директории проекта и добавьте туда ваш API ключ c https://freecurrencyapi.com
+
+```sh
+FREE_CURRENCY_API_KEY=ваш_секретный_ключ_api
+
+```
+
+5. Выполнение миграций:
+
+```sh
+python manage.py runserver
+
+```
+6. Запуск разработческого сервера:
+
+```sh
+python manage.py runserver
+```
+
+Откройте веб-браузер и перейдите по адресу http://127.0.0.1:8000/get-current-usd/, чтобы просмотреть текущий курс обмена и историю запросов.
